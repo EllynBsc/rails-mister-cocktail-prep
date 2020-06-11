@@ -1,0 +1,9 @@
+<h1>Form to create a dose</h1>
+
+<%= simple_form_for([@cocktail, @dose]) do |f|%>
+  <%= f.association  :ingredient %>
+  <!-- passing actually the id of the ingredient -->
+  <%#= f.input  :ingredient_id %>
+  <%= f.input :description %>
+  <%= f.submit %>
+<% end %>

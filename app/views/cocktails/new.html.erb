@@ -1,0 +1,5 @@
+<!-- in any helper method from rails you can pass some html attributes -->
+<%= simple_form_for(@cocktail) do |f|%>
+ <%= f.input :name %>
+ <%= f.submit class: 'btn btn-primary' %>
+<% end %>
